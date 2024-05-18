@@ -6,7 +6,7 @@
 //         isFruitAvailable = true
 //         break
 //     }
-    
+
 // }
 
 // if(isFruitAvailable === true){
@@ -14,3 +14,21 @@
 // }else{
 //     console.log(userFavFruit + " is not available");
 // }
+
+
+var firstNames = ["Ali", "Bilal", "Mudassir","Junaid"];
+var lastNames = ["Huzaifa", "Ansari", "Khan","Noor"];
+// var completeNames = ["Ali Huzaifa", "Ali Ansari", "Ali Khan", "Bilal Huzaifa", "Bilal Ansari", "Bilal Khan"];
+var finalNames = [];
+
+for (var firstNameIndex = 0; firstNameIndex < firstNames.length; firstNameIndex++) {
+    for (var lastNameIndex = 0; lastNameIndex < lastNames.length; lastNameIndex++) {
+        finalNames.push(firstNames[firstNameIndex] + " " + lastNames[lastNameIndex])
+    }
+}
+
+
+//  firstNames 0  lastNames loop will iterate completely
+//  firstNames 1  lastNames loop will iterate completely
+//  firstNames 2  lastNames loop will iterate completely
+console.log(finalNames)
